@@ -1,4 +1,4 @@
-def call(Int retryCount = 3) {
+def call(Integer retryCount = 3) {
     if (binding.hasVariable('busy')) {
         echo 'busy found '
         busy = true
