@@ -1,4 +1,3 @@
-# def checkoutWithRetries(retryCount) {
 def call(Int retryCount = 3) {
     if (binding.hasVariable('busy')) {
         echo 'busy found '
