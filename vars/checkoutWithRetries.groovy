@@ -13,6 +13,7 @@ def call(Integer retryCount = 10) {
             msg = e.getMessage()
             if ((retryCount % 5) == 0) {
                 echo "Checkout scm failed due to ${msg}.  Retrying"
+                sayHello("Checkout scm failed due to ${msg}.  Retrying")
             }
             retryCount--
             sleep(60)
